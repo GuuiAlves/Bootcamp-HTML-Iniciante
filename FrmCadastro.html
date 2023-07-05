@@ -6,10 +6,20 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <form name="signup" onsubmit="alert('Enviei o formulario');" method="POST" action="#">
-        Nome: <input type="text" name="name" /><br>
-        idade: <input type="number" name="age" /><br>
-        Senha: <input type="password" name="password" /><br>
+    <form name="signup" onsubmit="" method="get" action="#">
+        
+        Nome*: <input type="text" name="name" /><br>
+        Idade*: <input type="number" name="age" /><br>
+        Senha*: <input type="password" name="password" /><br>
+        <select name="role">
+            <option selected value="">Selecione o cargo</option>
+            <option value="analista">Analista</option>
+            <option value="desevolvedor">Desevolvedor</option>
+            <option value="arquiteto">Arquiteto</option>
+        </select>
+        <br />
+        <label>Mensagem:</label>
+        <textarea rows="20" cols="50" name="message"></textarea>
         <button type="submit">Enviar</button>
     </form>
     <hr />
