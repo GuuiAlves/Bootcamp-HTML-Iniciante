@@ -8,8 +8,24 @@
 <body style="background-color: rgb(144, 144, 144);">
     <h><center><b>Manipulando mídias!</b></center></h>
     <hr>
-    <img title="Apple" alt="Logo da apple" src="logo.png"/>
+    <img title="Apple" alt="Logo da apple" src="logo.png" width="200"/>
 
+    <br />
+    <audio controls>
+        <source src="audio.mp3" />
+        Seu navegador não tem suporte para este áudio.
+    </audio>
+    <br /> <!-- tag p/ pular de linha -->
+    <br />
+    <br />
+    <video controls> <!-- controls disponibiliza os botoes do player para o usuário -->
+        <source src="teste.mp4" />
+        <source src="teste.webm" />
+        <track default src="legenda-pt-br.vtt" kind="captions" srclang="pr-br" />
+        <track src="legenda.vtt" kind="captions" srclang="en" />
+        Seu navegador não tem suporte para este vídeo.
+    </video>
+    
     <p>
         <a href="index.html">Voltar</a>
     </p>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+
+    <!-- https://www.cssmatic.com/box-shadow para gerar box com sombra, etc-->
+    <style>
+        table{
+            -webkit-box-shadow: 2px 6px 21px -8px rgba(0,0,0,1);
+            -moz-box-shadow: 2px 6px 21px -8px rgba(0,0,0,1);
+            box-shadow: 2px 6px 21px -8px rgba(0,0,0,1);
+            border: solid 1px gray;
+        }
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+        table tfoot td {
+            background-color: gray;
+            color: white;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: rgb(214, 214, 214);
+        }
+        table tbody tr:hover td{
+            background-color: rgb(105, 105, 105);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <table align="center" width="250" cellspacing="0" cellpadding="5">
+        <caption>Tabela de idades</caption>
+
+        <thead>
+            <tr>
+                <th colspan="2">Tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th title="Idade">Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="1">
+                <td>Guilherme</td>
+                <td>27</td>
+            </tr>
+    
+            <tr id="2">
+                <td>Isabela</td>
+                <td>27</td>
+            </tr>
+    
+            <tr id="3">
+                <td>João</td>
+                <td>21</td>
+            </tr>
+    
+            <tr id="4">
+                <td>Maria</td>
+                <td>23</td>
+            </tr>
+    
+            <tr id="5">
+                <td>José</td>
+                <td>29</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br/>
+    <a href="index.html">Voltar</a>
+</body>
+</html>
